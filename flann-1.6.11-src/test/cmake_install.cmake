@@ -1,4 +1,4 @@
-# Install script for directory: /home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/test
+# Install script for directory: /home/ACG-Localizer/flann-1.6.11-src/test
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

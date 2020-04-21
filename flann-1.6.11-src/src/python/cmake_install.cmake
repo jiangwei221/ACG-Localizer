@@ -1,4 +1,4 @@
-# Install script for directory: /home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python
+# Install script for directory: /home/ACG-Localizer/flann-1.6.11-src/src/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,16 +33,16 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/flann/python" TYPE DIRECTORY FILES "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python/pyflann")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/flann/python" TYPE DIRECTORY FILES "/home/ACG-Localizer/flann-1.6.11-src/src/python/pyflann")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/flann/python" TYPE FILE FILES "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python/setup.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/flann/python" TYPE FILE FILES "/home/ACG-Localizer/flann-1.6.11-src/src/python/setup.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   execute_process(
-        COMMAND /usr/bin/python /home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python/setup.py install
-        WORKING_DIRECTORY "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python")
+        COMMAND /usr/bin/python /home/ACG-Localizer/flann-1.6.11-src/src/python/setup.py install
+        WORKING_DIRECTORY "/home/ACG-Localizer/flann-1.6.11-src/src/python")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

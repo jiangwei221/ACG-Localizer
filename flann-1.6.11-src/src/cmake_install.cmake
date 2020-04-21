@@ -1,4 +1,4 @@
-# Install script for directory: /home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src
+# Install script for directory: /home/ACG-Localizer/flann-1.6.11-src/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/cpp/cmake_install.cmake")
-  INCLUDE("/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/matlab/cmake_install.cmake")
-  INCLUDE("/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/src/python/cmake_install.cmake")
+  INCLUDE("/home/ACG-Localizer/flann-1.6.11-src/src/cpp/cmake_install.cmake")
+  INCLUDE("/home/ACG-Localizer/flann-1.6.11-src/src/matlab/cmake_install.cmake")
+  INCLUDE("/home/ACG-Localizer/flann-1.6.11-src/src/python/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

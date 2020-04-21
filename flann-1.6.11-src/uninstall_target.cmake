@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/install_manifest.txt\"")
-endif(NOT EXISTS "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/install_manifest.txt")
+if(NOT EXISTS "/home/ACG-Localizer/flann-1.6.11-src/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/ACG-Localizer/flann-1.6.11-src/install_manifest.txt\"")
+endif(NOT EXISTS "/home/ACG-Localizer/flann-1.6.11-src/install_manifest.txt")
 
-file(READ "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/install_manifest.txt" files)
+file(READ "/home/ACG-Localizer/flann-1.6.11-src/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

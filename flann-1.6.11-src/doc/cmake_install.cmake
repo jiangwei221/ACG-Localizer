@@ -1,4 +1,4 @@
-# Install script for directory: /home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/doc
+# Install script for directory: /home/ACG-Localizer/flann-1.6.11-src/doc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/flann" TYPE FILE FILES "/home/ankush/Folder/Tracking/dmp-matlab/flann-1.6.11-src/doc/manual.pdf")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/flann" TYPE FILE FILES "/home/ACG-Localizer/flann-1.6.11-src/doc/manual.pdf")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
