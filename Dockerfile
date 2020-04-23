@@ -18,4 +18,4 @@ RUN cd flann-1.6.11-src && cmake -D BUILD_MATLAB_BINDINGS=OFF -D BUILD_PYTHON_BI
 
 RUN mkdir build && cd build && cmake .. && make && make install
 
-RUN echo "PATH=/home/ACG-Localizer/build/bin:$PATH" >> ~/.bashrc 
+RUN echo "export PATH=/home/ACG-Localizer/build/bin:$PATH" >> ~/.bashrc 
