@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 
-RUN apt-get install -y cmake libgmm++-dev liblapack-dev libf2c2-dev unzip g++ vim wget git
+RUN apt-get install -y cmake libgmm++-dev liblapack-dev libf2c2-dev unzip g++ vim wget git zlib1g-dev jhead libjpeg-dev
 
 RUN cd /home && git clone https://github.com/jiangwei221/ACG-Localizer.git
 
@@ -17,3 +17,5 @@ COPY flann_modification/kmeans_index.h flann-1.6.11-src/src/cpp/flann/algorithms
 RUN cd flann-1.6.11-src && cmake -D BUILD_MATLAB_BINDINGS=OFF -D BUILD_PYTHON_BINDINGS=OFF . && make && make install
 
 RUN mkdir build && cd build && cmake .. && make && make install
+
+RUN echo "PATH=/home/ACG-Localizer/build/bin:$PATH" >> ~/.bashrc 
