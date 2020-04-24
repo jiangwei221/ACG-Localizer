@@ -296,7 +296,7 @@ Running the ECCV localization method is similar. Here is an example:
 
 After computing the descriptor assignments using a vocabulary tree with the
 command 
-* compute_desc_assignments bundle.info 1 100000 clusters.txt bundle.desc_assignments.integer_mean.voctree.clusters.100k.bin 6 1
+* compute_desc_assignments bundle.info 1 100000 clusters.txt bundle.desc_assignments.integer_mean.voctree.clusters.100k.bin 6 1 0
 
 the acg_localizer_active_search can be used as follows
 * acg_localizer_active_search list.query.keys.txt bundle.out 100000 clusters.txt bundle.desc_assignments.integer_mean.voctree.clusters.100k.bin 0 results.txt 200 1 1 1 10
