@@ -949,7 +949,11 @@ int main (int argc, char **argv)
     // std::cout << " proj_matrix: " << proj_matrix << std::endl;
 
     // ofs_details << inlier.size() << " " << nb_corr << " " << vw_time << " " << corr_time << " " << RANSAC_time << " " << all_timer.GetElapsedTime() << std::endl;
-    ofs_details << jpg_filename << " " << Rot.mp_data[0] << " " << Rot.mp_data[1] << " " << Rot.mp_data[2] << " " << Rot.mp_data[3] << " " << Rot.mp_data[4] << " " << Rot.mp_data[5] << " " << Rot.mp_data[6] << " " << Rot.mp_data[7] << " " << Rot.mp_data[8] << " " << proj_matrix.m_center << std::endl;
+    if ( K.mp_data[0] < 0 )
+      ofs_details << jpg_filename << " " << Rot.mp_data[0] << " " << Rot.mp_data[1] << " " << Rot.mp_data[2] << " " << Rot.mp_data[3] << " " << Rot.mp_data[4] << " " << Rot.mp_data[5] << " " << Rot.mp_data[6] << " " << Rot.mp_data[7] << " " << Rot.mp_data[8] << " " << proj_matrix.m_center << std::endl;
+    else
+      ofs_details << jpg_filename << " " << Rot.mp_data[0] << " " << Rot.mp_data[1] << " " << Rot.mp_data[2] << " " << -Rot.mp_data[3] << " " << -Rot.mp_data[4] << " " << -Rot.mp_data[5] << " " << -Rot.mp_data[6] << " " << -Rot.mp_data[7] << " " << -Rot.mp_data[8] << " " << proj_matrix.m_center << std::endl;
+    
 
     std::cout << "#########################" << std::endl;
 
